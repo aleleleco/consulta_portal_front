@@ -1,5 +1,64 @@
 {% block conteudo %}
-<h1>Consulta:</h1>
-<h2>Usuario {{usuario}}</h2>
+
+<table>
+
+    <tbody>
+
+    <tr >
+        <td>Nome:</td>
+        <td>{{ usuario['usuario']['nome'] }}</td>
+    </tr>
+    <tr >
+        <td>Login:</td>
+        <td>{{ usuario['usuario']['login'] }}</td>
+    </tr>
+    <tr >
+        <td>Status:</td>
+        <td>{{ usuario['usuario']['status'] }}</td>
+    </tr>
+    <tr >
+        <td>Data de Expiração:</td>
+        <td>{{ usuario['usuario']['dataExpiracao'] }}</td>
+    </tr>
+
+    </tbody>
+</table>
+<table >
+    <tbody>
+    {% for empresa in usuario['empresas'] %}
+    <tr >
+        <td>CNPJ</td>
+        <td>{{ empresa['cnpj'] }}</td>
+        <td>IE</td>
+        <td>{{ empresa['ie'] }}</td>
+        <td>IM</td>
+        <td>{{ empresa['im'] }}</td>
+    </tr>
+    <tr >
+        <td>Razão Social</td>
+        <td>{{ empresa['razaoSocial'] }}</td>
+        <td>Nome fantasia</td>
+        <td>{{ empresa['nomeFantasia'] }}</td>
+        <td>IM</td>
+        <td>{{ empresa['im'] }}</td>
+    </tr>
+    <tr >
+        <td>Endereço</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr >
+        <td>Cidade</td>
+        <td>{{ empresa['cidade'] }}</td>
+        <td>UF</td>
+        <td>{{ empresa['uf'] }}</td>
+        <td>IM</td>
+        <td>{{ empresa['im'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
 
 {% endblock %}

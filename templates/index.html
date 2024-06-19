@@ -1,46 +1,43 @@
 {% block conteudo %}
-<h1 align="center">Conecta Portal</h1>
-<table style="border-collapse: collapse; width: 100%;" border="1" data-mce-style="border-collapse: collapse; width: 100%;">
-						<tbody>
-							<tr>
-								<td style="width: 20%; text-align: center;" data-mce-style="width: 20%; text-align: center;">
-									<span style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">
-										<strong>
-											<a href="{{ url_for('consultaCadastros')}}" title="Consulta Cadastros" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">Consulta Cadastros</a>
-										</strong>
-									</span>
-								</td>
-								<td style="width: 20%; text-align: center;" data-mce-style="width: 20%; text-align: center;">
-									<span style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">
-										<strong>
-											<a href="ConsultaNotas" title="Consulta notas" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">Consulta notas</a>
-										</strong>
-									</span>
-								</td>
-								<td style="width: 20%; text-align: center;" data-mce-style="width: 20%; text-align: center;">
-									<span style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">
-										<strong>
-											<a href="LimpaDadosColetados" title="limpa dados coletados" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">limpa dados coletados</a>
-										</strong>
-									</span>
-								</td>
-								<td style="width: 20%; text-align: center;" data-mce-style="width: 20%; text-align: center;">
-									<span style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">
-										<strong>
-											<a href="verParametrosSistema" title="ver parametros do sistema" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">ver parametros do sistema</a>
-										</strong>
-									</span>
-								</td>
-								<td style="width: 20%; text-align: center;" data-mce-style="width: 20%; text-align: center;">
-									<span style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">
-										<strong>
-											<a href="Sair" title="Sair" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">Sair</a>
-										</strong>
-									</span>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+<h1>Conecta Portal</h1>
+<table class="table table-striped table-responsive table-bordered">
+    <tbody>
+    <thead class="thead-default">
+        <tr>
+            <td>
+                <strong>
+                    <a href="{{ url_for('consultaCadastros')}}" title="Consulta Cadastros">Consulta Cadastros</a>
+                </strong>
+
+            </td>
+            <td>
+                <strong>
+                    <a href="ConsultaNotas" title="Consulta notas">Consulta notas</a>
+                </strong>
+
+            <td>
+
+                <strong>
+                    <a href="LimpaDadosColetados" title="limpa dados coletados">limpa dados coletados</a>
+                </strong>
+
+            </td>
+            <td>
+                <strong>
+                    <a href="verParametrosSistema" title="ver parametros do sistema">ver parametros do sistema</a>
+                </strong>
+
+            </td>
+            <td>
+                <strong>
+                    <a href="Sair" title="Sair">Sair</a>
+                </strong>
+
+            </td>
+        </tr>
+    </thead>
+    </tbody>
+</table>
 
 
 {% endblock %}

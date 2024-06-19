@@ -1,32 +1,33 @@
 {% block conteudo %}
 <h1>Consulta Cadastros</h1>
 
-<table><tr><td><a href="{{ url_for('index')}}" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">Voltar</a></td></tr></table>
-<table style="border-collapse: collapse; width: 100%;" border="1" data-mce-style="border-collapse: collapse; width: 100%;">
-						<tbody>
-							<tr>
-								<td style="width: 20%; text-align: center;" data-mce-style="width: 20%; text-align: center;">
-									<span style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">
-										<strong>
-											<a href="{{ url_for('consultaUsuario')}}" title="Consulta Usuario" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">Usuário</a>
-										</strong>
-									</span>
-								</td>
-								<td style="width: 20%; text-align: center;" data-mce-style="width: 20%; text-align: center;">
-									<span style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">
-										<strong>
-											<a href="ConsultaNotas" title="Consulta notas" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">Empresas</a>
-										</strong>
-									</span>
-								</td>
-								<td style="width: 20%; text-align: center;" data-mce-style="width: 20%; text-align: center;">
-									<span style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">
-										<strong>
-											<a href="LimpaDadosColetados" title="limpa dados coletados" style="color: rgb(22, 145, 121);" data-mce-style="color: #169179;">Prefeituras</a>
-										</strong>
-									</span>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+<table>
+    <tr>
+        <td><a href="{{ url_for('index')}}">Voltar</a></td>
+    </tr>
+</table>
+<table>
+    <tbody>
+    <tr>
+        <td>
+            <strong>
+                <a href="{{ url_for('consultaUsuario')}}" title="Consulta Usuario">Usuário</a>
+            </strong>
+            </span>
+        </td>
+        <td>
+            <strong>
+                <a href="ConsultaNotas" title="Consulta notas" >Empresas</a>
+            </strong>
+            </span>
+        </td>
+        <td>
+            <strong>
+                <a href="LimpaDadosColetados" title="limpa dados coletados">Prefeituras</a>
+            </strong>
+            </span>
+        </td>
+    </tr>
+    </tbody>
+</table>
 {% endblock %}
