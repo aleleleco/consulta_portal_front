@@ -1,10 +1,1 @@
-{
-  "url_login": "https://homodfe.deloitte.com.br/webservice/api/login",
-  "user": "integrador_tst",
-  "token": "RxkATT2w8+QPthwaEXrMOt6XjgkugS7+AGVxSXLwJmKMhGgMmCrkZ1K1S0Bv3qTzPZHqmWOeHJlLCER8ZrCwBw==",
-      "acesso": {
-          "chave": "eyJhbGciOiJSUzUxMiJ9.eyJleHAiOjE3MTg3NjU5ODEsImp0aSI6ImM3NnJ1LWEwVnYtWHRvQ1FPdUtnR2ciLCJpYXQiOjE3MTg3MzM4MjEsIm5iZiI6MTcxODczMzcwMSwiaXNzIjoiREYtZV93ZWJzZXJ2aWNlIiwic3ViIjoiaW50ZWdyYWRvcl90c3QifQ.Z_U5kCJ8P2z8cJJxj3LNx79lqQ9HCiuisVXnZiymD7Z2Ti62pAJr4SNk9irc6tUs2WwYkzlyqxmbbph2y9i7ugTKwac8cmnSqe2Ou71zUeX5H_shhH5WGmRWe_ChJBK0EsT-IZe0kDLUp45Ty0C5TGbmyvqh6gHxfjOEfBSmTmUQtEWTcJGf1VWrjs0KpX1Ea6JCgJumwuoY_yoLfAC6dB48BQdzfsLuGexAZL086cfnKFVPIqHkkJnrvt91kzJGqB_x0fr43xySpBACmE876d9jRVpghLAusHFi1QU080-H2aSwRZNMdqu3ivnhzY7tWKIpTzcyi3p6rlzvv1IVJQ",
-          "data_expires": "18-06-2024",
-          "usuario": "integrador_tst"
-    }
-}
+{"url_login": "https://homodfe.deloitte.com.br/webservice/api/login", "user": "integrador_tst", "token": "RxkATT2w8+QPthwaEXrMOt6XjgkugS7+AGVxSXLwJmKMhGgMmCrkZ1K1S0Bv3qTzPZHqmWOeHJlLCER8ZrCwBw==", "acesso": {"chave": "eyJhbGciOiJSUzUxMiJ9.eyJleHAiOjE3MTg4NTIzODQsImp0aSI6Iko5X0toeTNtZXFEOFFVaV9CRHBLREEiLCJpYXQiOjE3MTg4MDc1NjQsIm5iZiI6MTcxODgwNzQ0NCwiaXNzIjoiREYtZV93ZWJzZXJ2aWNlIiwic3ViIjoiaW50ZWdyYWRvcl90c3QifQ.cdfmLuO1HzfD9iVQ6qGosPmXbdd-iW66omXCVj2ctokdPFYx95-PnqpP5UdTQ7rEER6BT52JgfMWBp8RBojOgPTRtInwYnXtKY3VyHPW_0uBBPXjdVGX07NleRflKgkWbGlUlsrPNePKDUsEE7kpuSfmkxCzAySAUdkUWKqP-2jbKZKJWQH1erRTx5TDqnjmpcvWJVuiZ0WsMaZbSSE7UcN43jhYJQv9Q3cq17mzaLCVyRueGCMYLqxz728SLISZYcueGwgLVBYmR7dtnBWiIXt2c0rAkXGaLsHjD7pluL5cb7hJv751KxTvoiLuTWqURgvY98Ur8E4Ai3jdcN876A", "data_expires": "19-06-2024", "usuario": "integrador_tst"}}

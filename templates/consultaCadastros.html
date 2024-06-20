@@ -1,33 +1,11 @@
+{% extends "template.html" %}
 {% block conteudo %}
-<h1>Consulta Cadastros</h1>
-
-<table>
-    <tr>
-        <td><a href="{{ url_for('index')}}">Voltar</a></td>
-    </tr>
-</table>
-<table>
-    <tbody>
-    <tr>
-        <td>
-            <strong>
-                <a href="{{ url_for('consultaUsuario')}}" title="Consulta Usuario">Usuário</a>
-            </strong>
-            </span>
-        </td>
-        <td>
-            <strong>
-                <a href="ConsultaNotas" title="Consulta notas" >Empresas</a>
-            </strong>
-            </span>
-        </td>
-        <td>
-            <strong>
-                <a href="LimpaDadosColetados" title="limpa dados coletados">Prefeituras</a>
-            </strong>
-            </span>
-        </td>
-    </tr>
-    </tbody>
-</table>
+<a href="{{ url_for('index')}}">Voltar</a>
+<nav id='menu'>
+        <li><a href="{{ url_for('consultaUsuario')}}" title="Consulta Usuario">Usuário</a></li>
+        <li><a href="ConsultaNotas" title="Consulta notas">Empresas</a></li>
+        <li><a href='verParametrosSistema'>Parâmetros do Sistema </a></li>
+        <li><a href="{{ url_for('index')}}">Voltar</a></li>
+        <li><a href='Sair'>Sair</a></li>
+</nav>
 {% endblock %}

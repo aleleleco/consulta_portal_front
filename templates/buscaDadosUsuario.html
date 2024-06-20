@@ -1,7 +1,10 @@
+{% extends "template.html" %}
 {% block conteudo %}
-
-<table>
-
+<a href="{{ url_for('consultaUsuario')}}">Voltar</a>
+<hr>
+</p>
+<div align="center">
+<table class="apresenta1">
     <tbody>
 
     <tr >
@@ -20,10 +23,17 @@
         <td>Data de Expiração:</td>
         <td>{{ usuario['usuario']['dataExpiracao'] }}</td>
     </tr>
+        <tr >
+        <td>permissao:</td>
+        <td>{{ usuario['usuario']['permissao'] }}</td>
+    </tr>
 
     </tbody>
 </table>
-<table >
+</div>
+</p>
+<div align="center">
+<table class="apresenta1">
     <tbody>
     {% for empresa in usuario['empresas'] %}
     <tr >
@@ -60,5 +70,6 @@
     </tr>
     {% endfor %}
 </table>
+</div>
 
 {% endblock %}

@@ -1,10 +1,13 @@
 {% extends "template.html" %}
 {% block conteudo %}
 <nav id='menu'>
-    <li><a href="{{ url_for('consultaCadastros')}}">Consulta Cadastros</a></li>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul>
+    <li><a href='consultaCadastros'>Consulta Cadastros</a></li>
     <li><a href='ConsultaNotas'>Consulta notas</a></li>
     <li><a href='LimpaDadosColetados'>Limpa Dados</a></li>
     <li><a href='verParametrosSistema'>Parâmetros do Sistema </a></li>
-    <li><a href='Sair'>Sair</a></li><hr>
+    <li><a href='Sair'>Sair</a></li>
+  </ul>
 </nav>
 {% endblock %}

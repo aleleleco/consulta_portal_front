@@ -30,36 +30,24 @@ def buscaDadosUsuario():
 
     response = bucasDados(url, configProperites)
 
-    return render_template('buscaDadosUsuario.html', usuario=response)
+    # checa status de retorno
+    if str(response.status_code) == "200":
+        return render_template('buscaDadosUsuario.html', usuario=json.loads(response.text))
+    else:
+        return render_template('erroConsulta.html', erro=response)
 
+@app.route('/erroConsulta')
+def erroConsulta():
+    return render_template('erroConsulta.html')
 
 def bucasDados(url_consulta, config):  # texto >> consulta_municipio
-
+    print(f'Busca dados')
     headers = {"Authorization": f"Bearer {config['acesso']['chave']}"}
     print(f'url de consulta {url_consulta}')
     print(f'header {headers}')
     response = requests.get(url_consulta, headers=headers)
+    return response
 
-    if str(response.status_code) == "200":
-
-        retorno = json.loads(response.text)
-        return retorno
-
-    else:
-        try:
-            print(f'Não foi possivel consultar\n')
-            print(response.content)
-            erro = json.loads(response.content)
-            print('|-----------')
-            print(f'|Status: {response.status_code} -  {erro["result"]}')
-            print('|-----------')
-        except:
-            print(f'Não foi possivel consultar\n')
-            print(response.content)
-            print(response.status_code)
-            #geraErro.erroHtml(str(response.content))
-
-        return response.status_code
 
 def buscaConfig():
     file = 'config.json'
